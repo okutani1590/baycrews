@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.box-wrapper {
+  /* フォント指定済 */
+}
+.box-wrapper * {
+  font-family: sicnews, sans-serif; /* フォント指定済 */
+}
+.box-wrapper .pc {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .box-wrapper .pc {
+    display: block;
+  }
+}
+.box-wrapper .sp {
+  display: block;
+}
+@media screen and (min-width: 750px) {
+  .box-wrapper .sp {
+    display: none;
+  }
+}

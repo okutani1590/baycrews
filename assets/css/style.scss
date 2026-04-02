@@ -1,0 +1,25 @@
+// 下記に記述
+.box-wrapper {
+  $breakpoint: 750;
+  $device_pc: 1280px;
+  $device_sp: 750px;
+  $device_pc: 1280;
+  $device_sp: 750;
+  $base-font: sicnews, sans-serif; /* フォント指定済 */
+  * {
+    font-family: $base-font; /* フォント指定済 */
+  }
+
+  .pc {
+    display: none;
+    @media screen and (min-width: #{$breakpoint}px) {
+      display: block;
+    }
+  }
+  .sp {
+    display: block;
+    @media screen and (min-width: #{$breakpoint}px) {
+      display: none;
+    }
+  }
+}
